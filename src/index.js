@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, compose } from 'redux';
 import App from './routes/App';
 import reducer from './reducers';
 
 const initialState = {
   cart: [],
+  total:[],
   products: [
     {
       "id": "1",
       "image": "https://arepa.s3.amazonaws.com/camiseta.png",
       "title": "Camiseta",
       "price": 25,
-      "description": "bla bla bla bla bla"
+      "description": "Camiseta Platzi"
     },
     {
       "id": "3",
@@ -54,7 +55,8 @@ const initialState = {
   ]
 };
 
-const store = createStore(reducer, initialState);
+const composeEnhancers= window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+const store = createStore(reducer, initialState,composeEnhancers);
 
 ReactDOM.render(
   <Provider store={store}>
