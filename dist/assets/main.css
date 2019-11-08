@@ -1,0 +1,345 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap);
+.Products-items {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  grid-row-gap: 1.5em;
+  display: grid;
+}
+.Products-item {
+  text-decoration: none;
+  box-shadow: 8px 14px 38px rgba(39,44,49,0.06), 1px 3px 8px rgba(39,44,49,0.03);
+  border-radiu: 5px;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+.Products-item-info {
+  padding: 10px;
+}
+.Products-item-info h2 {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.Products-item-info h2 span {
+  color: #33b13a;
+}
+.Products-item-info p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.Products-item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+  object-fit: contain;
+}
+.Products-item button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px;
+  border: 0px;
+  outline: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+}
+.Products-item button:hover {
+  background-color: rgba(39,44,49,0.06);
+}
+.Products .Products-MenuCategories {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 10px 0px 20px 0px;
+}
+.Products .Products-MenuCategories_button {
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #006298;
+  color: #f5e1a4;
+}
+.Products .Products-search input {
+  width: 800px;
+  border-radius: 10px;
+  background-color: rgba(245,225,164,0.5);
+}
+
+.Checkout {
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2rem;
+  grid-row-ga: 1.5em;
+  display: grid;
+}
+.Checkout-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Checkout-item .fas {
+  margin: 0 0 0 10px;
+  color: rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+.Checkout-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #808080;
+}
+.Checkout-element h4 {
+  margin: 0;
+}
+
+.screenMain {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  margin: 10px;
+}
+@media screen and (max-width: 780px) {
+  .screenMain {
+    grid-template-columns: 1fr;
+  }
+}
+.summaryBox {
+  background-color: rgba(241,230,178,0.7);
+  padding: 5px;
+  border-radius: 10px;
+  color: #003e51;
+  font-size: 18px;
+  line-height: 2;
+}
+@media screen and (max-width: 780px) {
+  .summaryBox {
+    display: none;
+  }
+}
+h4 {
+  font-size: 1rem;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+}
+.Header-checkout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  width: 150px;
+  font-size: 34px;
+  margin: 0 0 0 0.5em;
+  font-family: Arquitecta-Black;
+}
+.Header font-weight normal {
+  font-style: normal;
+}
+.Header-alert {
+  color: #33b13a;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.Header a {
+  text-decoration: none;
+  color: #01426a;
+}
+.Header img {
+  width: 60px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #3c484e;
+  font-family: 'Open Sans', sans-serif;
+}
+.Main {
+  padding: 30px;
+  grid-template-columns: minmax(auto, 1200px);
+  display: grid;
+  justify-content: center;
+}
+
+.menuContainer a {
+  text-decoration: none;
+  color: #fff;
+}
+.menuContainer a :link {
+  text-decoration: none;
+  color: #fff;
+}
+.menuContainer a :visited {
+  text-decoration: none;
+  color: #fff;
+}
+.menuContainer a :hover text-decoration none {
+  color: #fff;
+}
+.menuOpen {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 5px;
+  align-items: stretch;
+  background-color: #d40505;
+  font-size: 30px;
+  width: 10em;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+.menuOpen .menuRow {
+  justify-self: left;
+}
+.menuOpen :hover {
+  background-color: Maroon;
+}
+.menuClosed {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 5px;
+  align-items: stretch;
+  background-color: #d40505;
+  font-size: 30px;
+  width: 2.5em;
+  color: #fff;
+  padding: 0px;
+}
+.menuClosed :hover {
+  background-color: Maroon;
+}
+.menuClosed .option {
+  display: none;
+}
+.menuButton {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  justify-self: center;
+  padding: 10px 0px 10px 0px;
+  margin-left: 2px;
+}
+.menuRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  justify-self: center;
+  padding: 10px 0px 10px 0px;
+  margin-left: 2px;
+}
+.menuRow .option {
+  font-size: 20px;
+}
+.menuRow :hover {
+  background-color: Maroon;
+}
+.menuRowOpen {
+  display: grid;
+  grid-template-columns: 72px 3fr;
+  align-items: stretch;
+  padding: 10px 0px 10px 0px;
+  margin-left: 2px;
+}
+.menuRowOpen :hover {
+  background-color: Maroon;
+}
+.option {
+  align-items: end;
+  width: 200px;
+  font-size: 20px;
+}
+.icono {
+  justify-self: center;
+}
+.menuFacturacion-BotonFacturar {
+  display: flexbox;
+  justify-content: center;
+  background-color: #f00;
+  width: 500px;
+}
+
+.content {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.Pad__Logo {
+  width: 80px;
+  height: 80px;
+  align-self: flex-start;
+}
+.Pad {
+  background-color: #01426a;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+.Pad__Pass {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Pad__Pass input {
+  border: none;
+  -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+  width: 300px;
+  height: 40px;
+  border-radius: 40px;
+  justify-content: space-around;
+  background: rgba(255,255,255,0.4);
+  color: #333;
+  font-size: 35px;
+  text-align: center;
+  color: #fff;
+}
+.Pad__Numeros {
+  flex-direction: row;
+  width: 280px;
+  height: 70px;
+  display: flex;
+}
+.Pad__Numeros :hover {
+  background-color: #fff;
+  color: #00f;
+}
+.Pad__Numeros div {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  border: 2px solid #add8e6;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  background-color: #006298;
+  font-family: "Decour Soft";
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+}
+.Pad__Numeros div :hover {
+  background-color: #fff;
+  color: #00f;
+}
+.Pad__Boton button {
+  width: 280px;
+  height: 50px;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 5px;
+  font-family: "Decour Soft";
+}
+

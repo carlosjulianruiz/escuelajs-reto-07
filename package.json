@@ -1,18 +1,19 @@
 {
-  "name": "escuelajs-reto-07",
+  "name": "SistemaPOS",
   "version": "1.0.0",
-  "description": "Reto 7 Octubre 12: Curso de React Router y Redux",
+  "description": "Sistema de facturacion para ferias",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
     "server": "json-server locations.json",
     "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "app": "index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/platzi/escuelajs-reto-07.git"
+    "url": ""
   },
   "keywords": [
     "React",
@@ -20,23 +21,31 @@
     "Babel",
     "JavaScript"
   ],
-  "author": "Oscar Barajas <oscar@platzi.com>",
+  "author": "Carlos Julian Ruiz",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
+    "@trendmicro/react-sidenav": "^0.4.5",
+    "axios": "^0.19.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
+    "body-parser": "^1.19.0",
     "css-loader": "^3.2.0",
+    "express": "^4.17.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.7.0",
+    "mongodb": "^3.3.3",
     "react": "^16.10.1",
+    "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.10.1",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.4",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
     "style-loader": "^0.23.1",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
@@ -56,10 +65,7 @@
     "prettier": "^1.18.2",
     "webpack-dev-server": "^3.8.1"
   },
-  "bugs": {
-    "url": "https://github.com/platzi/escuelajs-reto-07/issues"
-  },
-  "homepage": "https://github.com/platzi/escuelajs-reto-07#readme",
+  "homepage": "",
   "jest": {
     "moduleNameMapper": {
       "\\.(css|styl|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"

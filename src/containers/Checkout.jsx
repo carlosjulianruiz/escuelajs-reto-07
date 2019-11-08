@@ -8,10 +8,8 @@ const Checkout = (props) => {
 
   const handleRemoveFromCart=(index)=>{
        props.removeFromCart(index);
-       console.log(cart);
   }
 
-  
   const calcularTotal=()=>{
     var total=0;
     cart.map(item=>(
@@ -27,7 +25,7 @@ const Checkout = (props) => {
         {cart.map((item,index) => (
           <div className="Checkout-item" key={index}>
             <div className="Checkout-element">
-              <h4>{item.title} {index}</h4>
+              <h4>{item.title}</h4>
               <span>
                 $
                 {item.price}

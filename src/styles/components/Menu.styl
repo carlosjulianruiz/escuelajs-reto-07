@@ -1,0 +1,88 @@
+.menuContainer a 
+    text-decoration none
+    color white
+    :link
+        text-decoration none
+        color white
+    :visited
+        text-decoration none
+        color white
+    :hover
+       text-decoration none
+        color white
+
+.menuOpen
+    display grid
+    grid-template-columns 1fr
+    grid-row-gap 5px
+    align-items stretch
+    background-color #D40505
+    font-size 30px
+    width 10em
+    color white
+    padding 10px
+    cursor pointer
+    .menuRow
+        justify-self left
+    :hover
+        background-color Maroon
+
+
+.menuClosed
+    display grid        
+    grid-template-columns 1fr
+    grid-row-gap 5px
+    align-items stretch
+    background-color #D40505
+    font-size 30px
+    width 2.5em
+    color white
+    padding 0px
+    :hover
+        background-color Maroon
+    .option
+        display none    
+
+.menuButton
+    display grid
+    grid-template-columns 1fr 
+    align-items stretch
+    justify-self center
+    padding:10px 0px 10px 0px
+    margin-left:2px
+
+
+.menuRow
+    display grid
+    grid-template-columns 1fr 
+    align-items stretch
+    justify-self center
+    padding:10px 0px 10px 0px
+    margin-left:2px
+    .option
+        font-size:20px
+    :hover
+        background-color Maroon
+
+.menuRowOpen
+    display grid
+    grid-template-columns 72px 3fr
+    align-items stretch
+    padding:10px 0px 10px 0px
+    margin-left:2px
+    :hover
+        background-color Maroon
+
+.option
+    align-items end
+    width 200px
+    font-size 20px
+
+.icono
+    justify-self center
+
+.menuFacturacion-BotonFacturar
+    display flexbox
+    justify-content center
+    background-color red
+    width 500px

@@ -2,12 +2,12 @@
 
 Solución al reto 07 de Escuela de JavaScript
 
-Nombre:
-Usuario Platzi:
+Nombre: CARLOS JULIAN RUIZ H
+Usuario Platzi: Carlos JULIAN Ruiz
 
 ## Ciudad
 - [] Ciudad de México
-- [] Bogotá
+- [x] Bogotá
 
 ## Reto:
   - [] Primer problema
