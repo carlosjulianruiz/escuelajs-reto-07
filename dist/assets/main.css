@@ -62,8 +62,23 @@
 }
 .Products .Products-search input {
   width: 800px;
+  height: 50px;
   border-radius: 10px;
   background-color: rgba(245,225,164,0.5);
+  transition: 1000;
+  pointer: text;
+}
+.Products .Products-search input:focus {
+  outline: none;
+  background-color: #fff;
+}
+.Products .Product-search_icon {
+  width: 100px;
+  color: rgba(211,211,211,0.7);
+  font-size: 34px;
+  padding: 20px;
+  margin-top: -70px;
+  z-indez: -1;
 }
 
 .Checkout {
@@ -92,6 +107,77 @@
 .Checkout-element h4 {
   margin: 0;
 }
+.MenuCheckout {
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+  padding: 20px;
+}
+.MenuCheckout :hover {
+  background-color: #00f;
+  color: #fff;
+}
+.MenuCheckout-formaPago_efectivo {
+  width: 250px;
+  background-color: #b5af94;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.MenuCheckout-formaPago_efectivo border none :hover {
+  background-color: #00f;
+  color: #fff;
+}
+.MenuCheckout-formaPago_tarjeta {
+  width: 250px;
+  background-color: #b5af94;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.MenuCheckout-formaPago_tarjeta border none :hover {
+  background-color: #00f;
+  color: #fff;
+}
+.MenuCheckout-printInvoice {
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+  width: 250px;
+  background-color: #b5af94;
+  border-radius: 10px;
+  padding: 50px;
+}
+.MenuCheckout-printInvoice margin 60px :hover {
+  background-color: #00f;
+}
+.trash {
+  width: 17px;
+  margin: 10px;
+  cursor: pointer;
+  fill: currentColor;
+}
+.cal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+MenuCheckout-formaPago_pago {
+  align: right;
+}
+.cambio {
+  color: #008000;
+  font-size: 24px;
+  height: 50px;
+  width: 200px;
+  background-color: #fff;
+  margin: 10px;
+}
+.receipt {
+  background-color: #00f;
+  color: #fff;
+}
 
 .screenMain {
   display: grid;
@@ -114,6 +200,19 @@
 }
 @media screen and (max-width: 780px) {
   .summaryBox {
+    display: none;
+  }
+}
+.printing {
+  background-color: rgba(241,230,178,0.7);
+  padding: 5px;
+  border-radius: 10px;
+  color: #003e51;
+  font-size: 18px;
+  line-height: 2;
+}
+@media screen and (max-width: 780px) {
+  .printing {
     display: none;
   }
 }

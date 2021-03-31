@@ -26,8 +26,20 @@ export const productsKeywordFilter=(keyword)=>({
   type: 'KEYWORD_FILTER',
   keyword,
 })
-
+export const resetCart=payload=>({
+  type: 'RESET_CART',
+  
+})
+export const addPayment=payment=>({
+  type: 'ADD_PAYMENT',
+  payment
+})
 export const handlerSendData=payload=>{
   type: 'SEND_DATA',
+  payload
+}
+
+export const updateProducts=payload=>{
+  type: 'UPDATE_PRODUCTS',
   payload
 }

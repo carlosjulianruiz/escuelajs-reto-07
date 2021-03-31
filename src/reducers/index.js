@@ -1,5 +1,14 @@
 const reducer = (state, action) => {
   switch (action.type) {
+    
+    case 'UPDATE_PRODUCTS':{
+
+      return {
+        ...state,
+        products:[1,2,3]
+      }
+    }
+
     case 'CALCULAR_TOTAL':{
       return {
         ...state,
@@ -33,18 +42,18 @@ const reducer = (state, action) => {
                         //console.log(item.title.indexOf(action.keyword.toUpperCase()));
                       })
           }
-    // case 'SEND_DATA':
-    //   return {
-    //     // ...state,
-    //     // fetch('https://www.bancaexportadora.com.co/api.php',{
-    //     //   method:'post',
-    //     //   body:JSON.stringify(state.cart),
-    //     //   headers:{'Content-Type':'application/json'}
-    //     // }).then(function(response){
-    //     //   return response.json();
-    //     // }).catch(err=>err);
-    //   }      
-          
+     
+    case 'RESET_CART':
+      return {
+        ...state,
+        cart:[]
+      }
+    
+    case 'ADD_PAYMENT':
+       return {
+         ...state,
+         payment:action.payment
+       }
     default:
       return state;
     }

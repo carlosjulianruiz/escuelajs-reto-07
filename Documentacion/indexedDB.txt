@@ -1,0 +1,5 @@
+window.indexedDB=window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+
+let request=window.indexedDB.open("DatabaseName", version);
+ej  let request=window.indexedDB.open("facturacion", 1);
+
